@@ -1,0 +1,156 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+nav {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #00bcd4;
+}
+
+nav i.fa-bars {
+  display: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* --- MENU DÉROULANT MOBILE --- */
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  padding: 20px;
+}
+
+.dropdown a {
+  color: white;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.dropdown i {
+  align-self: flex-end;
+  cursor: pointer;
+  margin-top: 10px;
+  color: white;
+}
+
+/* --- SECTIONS --- */
+section {
+  padding: 60px 30px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#home span {
+  color: #00bcd4;
+}
+
+.typewriter {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: square inside;
+  padding-left: 0;
+}
+
+/* --- FORMULAIRE DE CONTACT --- */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #0097a7;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  nav i.fa-bars {
+    display: block;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+}
