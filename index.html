@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safaa Portfolio</title>
+ >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+>
+  <header>
+    <div class="nav-container">
+     
+      <nav>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        
+      </nav>
+    </div>
+  </header>
+</h2>
+   
+  </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="shake-on-load">Salut, je suis <span>Safaa</span></h1>
+      <p class="typewriter shake-on-load">Développeuse Web | UI/UX Designer | Créative</p>
+      
+      
+      
+    
+    </div>
+  </section>
+ 
+
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis une passionnée du développement web et de la création d’expériences utilisateurs modernes et accessibles.</p>
+  </section>
+
+
+  <section id="skills">
+    <h2>Mes Compétences</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>React / Vue.js</li>
+      <li>UI/UX Design</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+
+  <section id="services">
+    <h2>Mes Services</h2>
+    <ul>
+      <li>Création de sites web vitrines</li>
+      <li>Design d’interface utilisateur</li>
+      <li>Refonte graphique</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects-container">
+      
+      <div class="project">
+        <h3>Calculatrice Web</h3>
+        <p>Une calculatrice simple et responsive réalisée en HTML, CSS et JavaScript.</p>
+        <a href="https://safaablh.github.io/calculatrice/" target="_blank" class="btn">Voir le projet</a>
+      </div>
+      <div class="project">
+        <h3>Formulaire Web</h3>
+        <p>Un formulaire moderne et fonctionnel conçu avec HTML, CSS et JavaScript.</p>
+        <a href="https://safaablh.github.io/formulaire/" target="_blank" class="btn">Voir le projet</a>
+      </div>
+  
+  
+    </div>  
+  </section>
+  
+
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form>
+      <label for="name">Nom :</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+ 
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const aboutSection = document.querySelector('#about');
+      const rect = aboutSection.getBoundingClientRect();
+  
+      if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+        aboutSection.classList.add('shake-on-scroll');
+      } else {
+        aboutSection.classList.remove('shake-on-scroll');
+      }
+    });
+  </script>
+  
+</body>
+</html>
